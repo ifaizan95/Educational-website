@@ -2,331 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Moi University — Foundation of Knowledge. Explore academic pathways from Intermediate to Degree and Post Graduation across campuses in Mumbai, Hyderabad, and Delhi.">
-    <meta name="theme-color" content="#0c6b56">
-    <title>Moi University | Foundation of Knowledge</title>
+    <meta name="description" content="University website for Moi University — Foundation of Knowledge. Explore Degree, Intermediate, and Post Graduation courses across campuses in Mumbai, Hyderabad, and Delhi.">
+    <title>University Website | Moi University</title>
     <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#course">Skip to content</a>
 
-    <header class="site-header" id="top">
-        <div class="header-inner">
-            <a class="logo" href="#home" aria-label="Moi University home">
-                <img src="images/logo.png" alt="Moi University — Foundation of Knowledge" width="220" height="72">
+    <section class="header" id="home">
+        <nav class="navbar" id="navbar">
+            <a class="logo" href="#home">
+                <img src="images/logo.png" alt="Moi University — Foundation of Knowledge" width="130" height="42">
             </a>
-
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-                <span class="nav-toggle-bar"></span>
-                <span class="nav-toggle-bar"></span>
-                <span class="nav-toggle-bar"></span>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-
-            <div class="nav-backdrop" data-nav-close hidden></div>
-            <nav class="site-nav" id="site-nav" aria-label="Primary">
+            <div class="nav-links" id="nav-links">
                 <ul>
-                    <li><a href="#home" data-nav>Home</a></li>
-                    <li><a href="#about" data-nav>About</a></li>
-                    <li><a href="#education" data-nav>Education</a></li>
-                    <li><a href="#campuses" data-nav>Campuses</a></li>
-                    <li><a href="#voices" data-nav>Voices</a></li>
-                    <li><a href="#contact" data-nav>Contact</a></li>
+                    <li><a href="#home" data-nav>HOME</a></li>
+                    <li><a href="#course" data-nav>ABOUT US</a></li>
+                    <li><a href="#footer" data-nav>CONTACT US</a></li>
+                    <li><a href="#testimonials" data-nav>BLOG</a></li>
+                    <li><a href="#campus" data-nav>CONTENT</a></li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Learn with a clear academic path — Intermediate, Degree, and Post Graduation — across our campuses in Mumbai, Hyderabad, and Delhi.</p>
+            <a href="#course" class="hero-btn">Visit to know more</a>
         </div>
-    </header>
+    </section>
 
-    <main id="main">
-        <section class="hero" id="home" aria-labelledby="hero-title">
-            <div class="container hero-grid">
-                <div class="hero-copy">
-                    <p class="eyebrow">Moi University · Academic Journey</p>
-                    <h1 id="hero-title">Foundation of knowledge, built one qualification at a time.</h1>
-                    <p class="lead">A focused educational home for Intermediate, Degree, and Post Graduation pathways — with campuses in Mumbai, Hyderabad, and Delhi.</p>
-                    <div class="hero-actions">
-                        <a class="btn btn-primary" href="#education">Explore Education</a>
-                        <a class="btn btn-ghost" href="#contact">Contact</a>
-                    </div>
-                    <dl class="hero-stats">
-                        <div>
-                            <dt>Academic pathways</dt>
-                            <dd>03</dd>
-                        </div>
-                        <div>
-                            <dt>Campus cities</dt>
-                            <dd>03</dd>
-                        </div>
-                    </dl>
-                </div>
-                <div class="hero-visual">
-                    <figure class="hero-frame">
-                        <img src="images/banner.jpg" alt="Historic university campus buildings set on a green lawn under a blue sky" width="1920" height="1080">
-                        <figcaption class="hero-badge">
-                            <span class="hero-badge-kicker">Campus life</span>
-                            <strong>Study in spaces designed for serious learning</strong>
-                        </figcaption>
-                    </figure>
-                </div>
+    <!-- ************courses************ -->
+    <section class="course" id="course">
+        <h2>Courses We Offer</h2>
+        <p>Choose the qualification that matches where you are in your academic journey.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Undergraduate programmes that form the core of study at Moi University, building on a strong Intermediate foundation.</p>
             </div>
-        </section>
-
-        <section class="about" id="about" aria-labelledby="about-title">
-            <div class="container about-grid">
-                <div class="about-media" data-reveal>
-                    <img src="images/banner.jpg" alt="Brick university architecture with domed roofs and tall arched windows" width="1920" height="1080">
-                    <div class="about-mark">
-                        <img src="images/logo.png" alt="" width="160" height="52">
-                    </div>
-                </div>
-                <div class="about-copy" data-reveal>
-                    <p class="eyebrow">About the university</p>
-                    <h2 id="about-title">An academic profile grounded in clear pathways.</h2>
-                    <p>Moi University exists to give students a structured route through education — from Intermediate foundations, through Degree study, into Post Graduation. The motto is simple and lasting: Foundation of Knowledge.</p>
-                    <p>This site presents the institution’s educational offering, campus presence, and student voices in one place — without noise, and with the information you need to take the next step.</p>
-                    <ul class="about-points">
-                        <li>
-                            <i class="fa fa-university" aria-hidden="true"></i>
-                            <span>Institution: Moi University</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-book" aria-hidden="true"></i>
-                            <span>Pathways: Intermediate, Degree, Post Graduation</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span>Campuses: Mumbai, Hyderabad, Delhi</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>A structured introduction to higher study, preparing students for degree-level coursework with clarity and support.</p>
             </div>
-        </section>
-
-        <section class="education" id="education" aria-labelledby="education-title">
-            <div class="container">
-                <header class="section-head" data-reveal>
-                    <p class="eyebrow">Education</p>
-                    <h2 id="education-title">Qualifications offered</h2>
-                    <p>Three academic levels, presented clearly — institution, board, and the stage of study they represent.</p>
-                </header>
-
-                <ol class="edu-grid">
-                    <li class="edu-card" data-reveal>
-                        <div class="edu-index" aria-hidden="true">01</div>
-                        <h3>Intermediate</h3>
-                        <p class="edu-level">Pre-university foundation</p>
-                        <dl class="edu-meta">
-                            <div>
-                                <dt>Institution</dt>
-                                <dd>Moi University</dd>
-                            </div>
-                            <div>
-                                <dt>Board / University</dt>
-                                <dd>Moi University</dd>
-                            </div>
-                            <div>
-                                <dt>Stage</dt>
-                                <dd>Intermediate</dd>
-                            </div>
-                        </dl>
-                        <p>A structured introduction to higher study, preparing students for degree-level coursework.</p>
-                    </li>
-                    <li class="edu-card edu-card-featured" data-reveal>
-                        <div class="edu-index" aria-hidden="true">02</div>
-                        <p class="edu-tag">Core pathway</p>
-                        <h3>Degree</h3>
-                        <p class="edu-level">Undergraduate qualification</p>
-                        <dl class="edu-meta">
-                            <div>
-                                <dt>Institution</dt>
-                                <dd>Moi University</dd>
-                            </div>
-                            <div>
-                                <dt>Board / University</dt>
-                                <dd>Moi University</dd>
-                            </div>
-                            <div>
-                                <dt>Stage</dt>
-                                <dd>Degree</dd>
-                            </div>
-                        </dl>
-                        <p>The principal undergraduate offering — a full academic programme built on the Intermediate foundation.</p>
-                    </li>
-                    <li class="edu-card" data-reveal>
-                        <div class="edu-index" aria-hidden="true">03</div>
-                        <h3>Post Graduation</h3>
-                        <p class="edu-level">Advanced academic study</p>
-                        <dl class="edu-meta">
-                            <div>
-                                <dt>Institution</dt>
-                                <dd>Moi University</dd>
-                            </div>
-                            <div>
-                                <dt>Board / University</dt>
-                                <dd>Moi University</dd>
-                            </div>
-                            <div>
-                                <dt>Stage</dt>
-                                <dd>Post Graduation</dd>
-                            </div>
-                        </dl>
-                        <p>Specialised study for graduates continuing into deeper academic or professional work.</p>
-                    </li>
-                </ol>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Advanced academic study for graduates who want to continue into specialised learning after their degree.</p>
             </div>
-        </section>
-
-        <section class="campuses" id="campuses" aria-labelledby="campuses-title">
-            <div class="container">
-                <header class="section-head" data-reveal>
-                    <p class="eyebrow">Campuses</p>
-                    <h2 id="campuses-title">Study across three cities</h2>
-                    <p>The same educational pathways, available through campuses in Mumbai, Hyderabad, and Delhi.</p>
-                </header>
-
-                <ul class="campus-grid">
-                    <li class="campus-card" data-reveal>
-                        <article>
-                            <div class="campus-image">
-                                <img src="images/mumbai.jfif" alt="Sea Link cable-stayed bridge over the water in Mumbai" width="1000" height="1502">
-                            </div>
-                            <div class="campus-body">
-                                <h3>Mumbai</h3>
-                                <p>Coastal campus city — one of three locations in the university network.</p>
-                                <span class="campus-pin"><i class="fa fa-map-marker" aria-hidden="true"></i> Mumbai</span>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="campus-card" data-reveal>
-                        <article>
-                            <div class="campus-image">
-                                <img src="images/hyderabad.jpg" alt="Charminar monument and evening market in Hyderabad" width="700" height="1060">
-                            </div>
-                            <div class="campus-body">
-                                <h3>Hyderabad</h3>
-                                <p>A historic academic city in the university’s campus network.</p>
-                                <span class="campus-pin"><i class="fa fa-map-marker" aria-hidden="true"></i> Hyderabad</span>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="campus-card" data-reveal>
-                        <article>
-                            <div class="campus-image">
-                                <img src="images/Delhi.jpg" alt="India Gate illuminated at night in Delhi" width="709" height="1024">
-                            </div>
-                            <div class="campus-body">
-                                <h3>Delhi</h3>
-                                <p>Capital-city campus, completing the three-city educational footprint.</p>
-                                <span class="campus-pin"><i class="fa fa-map-marker" aria-hidden="true"></i> Delhi</span>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="voices" id="voices" aria-labelledby="voices-title">
-            <div class="container">
-                <header class="section-head" data-reveal>
-                    <p class="eyebrow">Student voices</p>
-                    <h2 id="voices-title">What our students say</h2>
-                    <p>Reflections from learners on the academic pathways offered here.</p>
-                </header>
-
-                <ul class="voice-grid">
-                    <li class="voice-card" data-reveal>
-                        <blockquote>
-                            <p>The Intermediate pathway gave me a clear start. Coursework was organised, and I always knew what the next academic step would be.</p>
-                            <footer>
-                                <img src="images/user.jfif" alt="" width="48" height="48">
-                                <cite>John</cite>
-                            </footer>
-                        </blockquote>
-                    </li>
-                    <li class="voice-card" data-reveal>
-                        <blockquote>
-                            <p>Degree study at Moi University felt focused. The campus community and teaching rhythm made it easier to stay consistent through the year.</p>
-                            <footer>
-                                <img src="images/user.jfif" alt="" width="48" height="48">
-                                <cite>John</cite>
-                            </footer>
-                        </blockquote>
-                    </li>
-                    <li class="voice-card" data-reveal>
-                        <blockquote>
-                            <p>Post Graduation here is about depth. I could continue from my degree without losing the academic structure I already knew.</p>
-                            <footer>
-                                <img src="images/user.jfif" alt="" width="48" height="48">
-                                <cite>John</cite>
-                            </footer>
-                        </blockquote>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="contact" id="contact" aria-labelledby="contact-title">
-            <div class="container contact-panel" data-reveal>
-                <div class="contact-copy">
-                    <p class="eyebrow eyebrow-on-dark">Get in touch</p>
-                    <h2 id="contact-title">Ready to begin your academic journey?</h2>
-                    <p>Reach the university through the channels already listed on this site. We would be glad to help you choose a pathway.</p>
-                    <a class="btn btn-light" href="#education">Explore Education</a>
-                </div>
-                <ul class="contact-channels">
-                    <li>
-                        <span class="channel-icon" aria-hidden="true"><i class="fa fa-facebook-official"></i></span>
-                        <span>
-                            <strong>Facebook</strong>
-                            <span>University updates</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="channel-icon" aria-hidden="true"><i class="fa fa-linkedin-square"></i></span>
-                        <span>
-                            <strong>LinkedIn</strong>
-                            <span>Academic network</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="channel-icon" aria-hidden="true"><i class="fa fa-envelope"></i></span>
-                        <span>
-                            <strong>Email</strong>
-                            <span>Write to the university</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="channel-icon" aria-hidden="true"><i class="fa fa-phone-square"></i></span>
-                        <span>
-                            <strong>Phone</strong>
-                            <span>Speak with admissions</span>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <img src="images/logo.png" alt="Moi University" width="180" height="58">
-                <p>Foundation of Knowledge. Intermediate, Degree, and Post Graduation — Mumbai, Hyderabad, and Delhi.</p>
-            </div>
-            <nav class="footer-nav" aria-label="Footer">
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#campuses">Campuses</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <p class="footer-copy">© 2026 Moi University. Educational website.</p>
         </div>
-    </footer>
+    </section>
+
+    <!-- ------------Campus -->
+    <section class="campus" id="campus">
+        <h2>Our Global Campus</h2>
+        <p>The same educational pathways, available through campuses in three cities.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/mumbai.jfif" alt="Sea Link in Mumbai, one of our campus cities">
+                <div class="layer">
+                    <h3>MUMBAI</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/hyderabad.jpg" alt="Charminar in Hyderabad, one of our campus cities">
+                <div class="layer">
+                    <h3>HYDERABAD</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/Delhi.jpg" alt="India Gate in Delhi, one of our campus cities">
+                <div class="layer">
+                    <h3>DELHI</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------testimonials------------- -->
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Students Say</h2>
+        <p>Voices from learners on the pathways we offer.</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/user.jfif" alt="" width="40" height="40">
+                <div>
+                    <p>The Intermediate pathway gave me a clear start. Coursework was organised, and I always knew what the next academic step would be.</p>
+                    <h3>~John~</h3>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user.jfif" alt="" width="40" height="40">
+                <div>
+                    <p>Degree study at the university felt focused. The campus community made it easier to stay consistent through the year.</p>
+                    <h3>~John~</h3>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user.jfif" alt="" width="40" height="40">
+                <div>
+                    <p>Post Graduation here is about depth. I could continue from my degree without losing the academic structure I already knew.</p>
+                    <h3>~John~</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="footer-col">
+            <a href="#home" class="hero-btn">Sign In</a>
+            <div class="icon">
+                <a href="#footer" aria-label="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#footer" aria-label="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="#footer" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="#footer" aria-label="Phone"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+            </div>
+            <p>Stay connected with Moi University — Foundation of Knowledge.</p>
+        </div>
+    </section>
 
     <script src="app.js" defer></script>
 </body>
