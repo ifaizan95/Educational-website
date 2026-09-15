@@ -374,7 +374,7 @@ h2 {
     object-fit: cover;
 }
 
-.carousel-slide p {
+.carousel-section .carousel-slide p {
     position: absolute;
     left: 0;
     right: 0;
@@ -493,11 +493,16 @@ h2 {
     color: #000;
 }
 
+.reviews-carousel .carousel-slide img {
+    width: 56px;
+    height: 56px;
+}
+
 .review-card {
     max-width: 640px;
     margin: 48px auto;
     text-align: center;
-    padding: 8px 48px 24px;
+    padding: 24px 72px 32px;
 }
 
 .review-card img {
@@ -505,21 +510,34 @@ h2 {
     height: 56px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 0 auto 20px;
+    margin: 0 auto 16px;
 }
 
-.review-card p {
-    font-size: 1.15rem;
-    color: #4a4a4a;
-    margin-bottom: 16px;
+.review-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 4px;
 }
 
 .review-card span {
-    display: inline-block;
-    margin-top: 6px;
+    display: block;
+    margin: 0 0 16px;
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.04em;
+    color: #4a4a4a;
+}
+
+.review-card p {
+    position: static;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #4a4a4a;
+    line-height: 1.7;
+    letter-spacing: normal;
+    text-transform: none;
+    background: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Contact — form over campus photo */
