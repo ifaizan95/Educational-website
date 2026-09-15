@@ -3,6 +3,7 @@
     const toggle = document.querySelector(".nav-toggle");
     const navLinks = document.querySelector("#nav-links");
     const links = Array.from(document.querySelectorAll("[data-nav]"));
+    const form = document.querySelector("#contact-form");
     const sections = links
         .map(function (link) {
             return document.querySelector(link.getAttribute("href"));
@@ -11,11 +12,6 @@
         .sort(function (a, b) {
             return a.offsetTop - b.offsetTop;
         });
-
-    function setNavState() {
-        if (!navbar) return;
-        navbar.classList.toggle("is-scrolled", window.scrollY > 20);
-    }
 
     function closeNav() {
         if (!navLinks || !toggle) return;
@@ -51,7 +47,7 @@
     }
 
     function setActiveLink() {
-        const offset = window.innerHeight * 0.35;
+        const offset = window.innerHeight * 0.32;
         let currentId = "home";
 
         sections.forEach(function (section) {
@@ -59,10 +55,6 @@
                 currentId = section.id;
             }
         });
-
-        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
-            currentId = "footer";
-        }
 
         links.forEach(function (link) {
             const isActive = link.getAttribute("href") === "#" + currentId;
@@ -75,16 +67,10 @@
         });
     }
 
-    window.addEventListener("scroll", function () {
-        setNavState();
-        setActiveLink();
-    }, { passive: true });
-
+    window.addEventListener("scroll", setActiveLink, { passive: true });
     window.addEventListener("resize", function () {
-        if (window.innerWidth > 700) closeNav();
+        if (window.innerWidth > 768) closeNav();
     });
-
-    setNavState();
     setActiveLink();
 
     function initCarousels() {
@@ -138,35 +124,15 @@
                 }, 5000);
             }
 
-            if (prev) {
-                prev.addEventListener("click", function () {
-                    goTo(index - 1);
-                    restart();
-                });
-            }
+            if (prev) prev.addEventListener("click", function () { goTo(index - 1); restart(); });
+            if (next) next.addEventListener("click", function () { goTo(index + 1); restart(); });
 
-            if (next) {
-                next.addEventListener("click", function () {
-                    goTo(index + 1);
-                    restart();
-                });
-            }
-
-            root.addEventListener("keydown", function (event) {
-                if (event.key === "ArrowLeft") {
-                    goTo(index - 1);
-                    restart();
-                }
-                if (event.key === "ArrowRight") {
-                    goTo(index + 1);
-                    restart();
-                }
-            });
-
-            root.addEventListener("mouseenter", function () {
-                window.clearInterval(timer);
-            });
+            root.addEventListener("mouseenter", function () { window.clearInterval(timer); });
             root.addEventListener("mouseleave", restart);
+            root.addEventListener("keydown", function (event) {
+                if (event.key === "ArrowLeft") { goTo(index - 1); restart(); }
+                if (event.key === "ArrowRight") { goTo(index + 1); restart(); }
+            });
 
             root.setAttribute("tabindex", "0");
             renderDots();
@@ -176,4 +142,24 @@
     }
 
     initCarousels();
+
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            var existing = form.querySelector(".form-status");
+            if (existing) existing.remove();
+            var note = document.createElement("p");
+            note.className = "form-status";
+            note.textContent = "Thanks — your message is ready. This demo form stays on the page.";
+            form.appendChild(note);
+            form.reset();
+        });
+    }
+
+    if (navbar) {
+        navbar.classList.toggle("is-scrolled", window.scrollY > 8);
+        window.addEventListener("scroll", function () {
+            navbar.classList.toggle("is-scrolled", window.scrollY > 8);
+        }, { passive: true });
+    }
 })();
