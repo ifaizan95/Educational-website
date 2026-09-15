@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <a class="skip-link" href="#course">Skip to content</a>
+    <a class="skip-link" href="#about">Skip to content</a>
 
     <section class="header" id="home">
         <nav class="navbar" id="navbar">
@@ -29,9 +29,9 @@
             <div class="nav-links" id="nav-links">
                 <ul>
                     <li><a href="#home" data-nav>HOME</a></li>
-                    <li><a href="#course" data-nav>ABOUT US</a></li>
+                    <li><a href="#about" data-nav>ABOUT US</a></li>
                     <li><a href="#footer" data-nav>CONTACT US</a></li>
-                    <li><a href="#testimonials" data-nav>BLOG</a></li>
+                    <li><a href="#reviews" data-nav>BLOG</a></li>
                     <li><a href="#campus" data-nav>CONTENT</a></li>
                 </ul>
             </div>
@@ -40,6 +40,21 @@
             <h1>World's Biggest University</h1>
             <p>Learn with a clear academic path — Intermediate, Degree, and Post Graduation — across our campuses in Mumbai, Hyderabad, and Delhi.</p>
             <a href="#course" class="hero-btn">Visit to know more</a>
+        </div>
+    </section>
+
+    <!-- ************two column************ -->
+    <section class="two-column" id="about">
+        <div class="two-column-row">
+            <div class="two-column-media">
+                <img src="images/banner.jpg" alt="University campus buildings and lawn">
+            </div>
+            <div class="two-column-copy">
+                <h2>About Us</h2>
+                <p>Moi University is built on a simple promise: Foundation of Knowledge. Students move through Intermediate, Degree, and Post Graduation with the same academic structure on every campus.</p>
+                <p>From Mumbai and Hyderabad to Delhi, the aim is the same — clear pathways, focused teaching, and a campus community that stays with you through each stage of study.</p>
+                <a href="#course" class="hero-btn hero-btn-red">Visit to know more</a>
+            </div>
         </div>
     </section>
 
@@ -86,6 +101,113 @@
                     <h3>DELHI</h3>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- ************carousel************ -->
+    <section class="gallery" id="carousel">
+        <h2>Campus Carousel</h2>
+        <p>A closer look at the places where Intermediate, Degree, and Post Graduation pathways are taught.</p>
+        <div class="carousel" data-carousel>
+            <button class="carousel-btn" type="button" data-prev aria-label="Previous slide">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="carousel-viewport">
+                <ul class="carousel-track">
+                    <li class="carousel-slide is-active">
+                        <img src="images/banner.jpg" alt="Historic university campus buildings">
+                        <div class="carousel-caption">Foundation of Knowledge</div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="images/mumbai.jfif" alt="Mumbai campus city">
+                        <div class="carousel-caption">Mumbai Campus</div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="images/hyderabad.jpg" alt="Hyderabad campus city">
+                        <div class="carousel-caption">Hyderabad Campus</div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="images/Delhi.jpg" alt="Delhi campus city">
+                        <div class="carousel-caption">Delhi Campus</div>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-btn" type="button" data-next aria-label="Next slide">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+            <div class="carousel-dots" data-dots></div>
+        </div>
+    </section>
+
+    <!-- ************clients************ -->
+    <section class="clients" id="clients">
+        <h2>Our Clients</h2>
+        <p>The university network and academic pathways we serve.</p>
+        <div class="clients-row">
+            <figure class="client-item">
+                <img src="images/logo.png" alt="Moi University">
+            </figure>
+            <figure class="client-item">
+                <span>Mumbai</span>
+            </figure>
+            <figure class="client-item">
+                <span>Hyderabad</span>
+            </figure>
+            <figure class="client-item">
+                <span>Delhi</span>
+            </figure>
+            <figure class="client-item">
+                <span>Degree</span>
+            </figure>
+            <figure class="client-item">
+                <span>Intermediate</span>
+            </figure>
+            <figure class="client-item">
+                <span>Post Graduation</span>
+            </figure>
+        </div>
+    </section>
+
+    <!-- ************reviews************ -->
+    <section class="reviews" id="reviews">
+        <h2>Student Reviews</h2>
+        <p>Read what learners say about each stage of study.</p>
+        <div class="carousel reviews-carousel" data-carousel>
+            <button class="carousel-btn carousel-btn-dark" type="button" data-prev aria-label="Previous review">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="carousel-viewport">
+                <ul class="carousel-track">
+                    <li class="carousel-slide is-active">
+                        <article class="review-card">
+                            <img src="images/user.jfif" alt="" width="56" height="56">
+                            <p>The Intermediate pathway gave me a clear start. Coursework was organised, and I always knew what the next academic step would be.</p>
+                            <h3>~John~</h3>
+                            <span>Intermediate</span>
+                        </article>
+                    </li>
+                    <li class="carousel-slide">
+                        <article class="review-card">
+                            <img src="images/user.jfif" alt="" width="56" height="56">
+                            <p>Degree study at the university felt focused. The campus community made it easier to stay consistent through the year.</p>
+                            <h3>~John~</h3>
+                            <span>Degree</span>
+                        </article>
+                    </li>
+                    <li class="carousel-slide">
+                        <article class="review-card">
+                            <img src="images/user.jfif" alt="" width="56" height="56">
+                            <p>Post Graduation here is about depth. I could continue from my degree without losing the academic structure I already knew.</p>
+                            <h3>~John~</h3>
+                            <span>Post Graduation</span>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-btn carousel-btn-dark" type="button" data-next aria-label="Next review">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+            <div class="carousel-dots" data-dots></div>
         </div>
     </section>
 
